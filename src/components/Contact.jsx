@@ -69,7 +69,7 @@ const Contact = () => {
               },
               {
                 icon: Linkedin,
-                href: "www.linkedin.com/in/sarthak3203",
+                href: "https://linkedin.com/in/sarthak3203/",
                 label: "LinkedIn",
               },
               {

@@ -81,7 +81,7 @@ const HeroSection = () => {
                 <Github className="w-8 h-8" />
               </a>
               <a
-                href="www.linkedin.com/in/sarthak3203"
+                href="https://linkedin.com/in/sarthak3203/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 hover:text-blue-500 transition-colors"
@@ -96,7 +96,7 @@ const HeroSection = () => {
       {/* Scroll indicator */}
       <motion.div
         animate={{ y: [0, 12, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
+        transition={{ repeat: Infinity, duration: 1 }}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
       >
         <div className="w-px h-20 bg-gradient-to-b from-blue-500 to-transparent" />
