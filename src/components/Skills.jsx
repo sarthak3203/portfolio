@@ -18,7 +18,7 @@ const SkillCategory = ({ title, skills, icon: Icon, delay }) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay }}
-    className="bg-zinc-900/40 border border-white/5 p-8 rounded-3xl hover:border-blue-500/30 transition-all group"
+    className="bg-zinc-900/65 border border-white/10 p-8 rounded-3xl hover:border-blue-500/30 transition-all group"
   >
     <div className="flex items-center gap-4 mb-6">
       <div className="p-3 bg-blue-600/10 rounded-2xl text-blue-500 group-hover:scale-110 transition-transform">
@@ -68,27 +68,27 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-32 bg-black relative overflow-hidden">
+    <section id="skills" className="py-10 md:18 bg-black relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.05)_0%,transparent_70%)] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
           <div className="max-w-xl">
             <motion.h2 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-5xl font-black text-white mb-6 uppercase tracking-tighter"
+              className="text-4xl md:text-5xl font-black leading-none text-white mb-6 uppercase"
             >
-              Technical <span className="text-blue-500">Stack</span>
+              Technical <br /> <span className="text-blue-500">Stack</span>
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-zinc-500 text-lg font-light leading-relaxed"
+              className="text-zinc-400 text-lg font-light leading-relaxed"
             >
               My expertise spans across the full development lifecycle, from architecting scalable 
               backends to crafting high-performance, fluid user interfaces.
@@ -99,7 +99,7 @@ const Skills = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="hidden md:flex items-center gap-4 text-xs font-mono text-blue-500 font-bold uppercase tracking-[0.2em]"
+            className="hidden md:flex items-center gap-4 text-sm font-mono text-blue-500 font-bold uppercase tracking-[0.2em]"
           >
             <Zap size={16} className="animate-pulse" />
             Optimized for Production
@@ -117,12 +117,12 @@ const Skills = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 pt-10 border-t border-white/5 flex flex-wrap justify-center items-center gap-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+          className="mt-6 md:mt-10 pt-10 border-t border-white/10 flex flex-wrap justify-center items-center gap-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
         >
-          <span className="text-zinc-500 font-bold uppercase tracking-widest text-[10px]">Workflow Tools:</span>
-          <div className="flex items-center gap-2 text-white font-mono text-sm"><Layers size={18} /> VS Code</div>
-          <div className="flex items-center gap-2 text-white font-mono text-sm"><ShieldCheck size={18} /> Postman</div>
-          <div className="flex items-center gap-2 text-white font-mono text-sm"><Code2 size={18} /> Git/GitHub</div>
+          <span className="text-blue-500 font-bold uppercase tracking-normal text-xl"> Tools:</span>
+          <div className="flex items-center gap-2 text-white font-mono text-lg"><Layers size={18} /> VS Code</div>
+          <div className="flex items-center gap-2 text-white font-mono text-lg"><ShieldCheck size={18} /> Postman</div>
+          <div className="flex items-center gap-2 text-white font-mono text-lg"><Code2 size={18} /> Git/GitHub</div>
         </motion.div>
       </div>
     </section>

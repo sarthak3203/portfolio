@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="bg-black py-32 border-b border-white/5 relative overflow-hidden">
+    <section id="about" className="bg-black py-4 md:py-8 border-b border-white/40 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -14,15 +14,13 @@ const About = () => {
           className="max-w-5xl"
         >
           {/* Section Heading matching the style of other components */}
-          <h2 className="text-5xl md:text-7xl font-black text-white mb-12 uppercase tracking-tighter leading-none">
-            About <span className="text-blue-500 italic">Me</span>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 md:mb-10 uppercase leading-none">
+            About <span className="text-blue-500">Me</span>
           </h2>
 
           <div className="space-y-8">
-            <p className="text-zinc-400 text-xl md:text-2xl font-light leading-relaxed">
-              I am a <span className="text-white font-medium">Full Stack Developer</span> dedicated to delivering production-grade web applications. 
-              Currently based in Bengaluru, I specialize in architecting reliable systems that bridge 
-              the gap between complex backend logic and high-end, interactive user interfaces.
+            <p className="text-zinc-400 text-[16px] md:text-[20px] font-normal leading-relaxed">
+              I’m a Full Stack Developer with a strong backend focus, currently working at Lebeda Marcom and Creative Studio. I build production-grade web applications in fast-paced startup environments, working across Next.js, React.js, and Node.js. I have hands-on experience designing scalable backend systems, working with relational and NoSQL databases, caching layers, and real-world APIs. I care deeply about building reliable services and writing clean, maintainable code that scales.
             </p>
             
 

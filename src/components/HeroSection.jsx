@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center pt-24 bg-black overflow-hidden"
+      className="relative min-h-screen flex items-center pt-8 bg-black overflow-hidden"
     >
       {/* Background blobs */}
       <div className="absolute top-1/4 -left-32 w-[520px] h-[520px] bg-blue-600/15 rounded-full blur-[140px]" />
@@ -49,7 +49,7 @@ const HeroSection = () => {
           {/* Heading */}
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl md:text-[110px] font-black text-white leading-[0.95] tracking-tight mb-12"
+            className="text-5xl md:text-[110px] font-black text-white md:leading-none leading-16 tracking-normal mb-12"
           >
             Crafting <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-300 to-zinc-600">
@@ -65,7 +65,7 @@ const HeroSection = () => {
             className="flex flex-wrap items-center gap-8"
           >
             {/* CTA */}
-            <a href="#contact" className="relative z-20 px-10 py-5 bg-blue-600 text-white rounded-xl font-bold flex items-center gap-3 hover:bg-blue-700 transition-all">
+            <a href="#contact" className="relative z-20 md:px-5 md:py-3 py-2 px-3 bg-linear-to-r from-blue-400 to-blue-800 text-white text-[16px] md:text-[20px] rounded-xl font-bold flex items-center gap-3 hover:bg-blue-700 hover:scale-108 transition-all">
               HIRE ME
               <ArrowRight className="w-5 h-5" />
             </a>
@@ -76,17 +76,17 @@ const HeroSection = () => {
                 href="https://github.com/sarthak3203"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-blue-500 transition-colors"
               >
-                <Github className="w-6 h-6" />
+                <Github className="w-8 h-8" />
               </a>
               <a
                 href="www.linkedin.com/in/sarthak3203"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-blue-500 transition-colors"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-8 h-8" />
               </a>
             </div>
           </motion.div>

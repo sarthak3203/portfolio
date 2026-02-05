@@ -5,27 +5,26 @@ import { ShieldCheck, ChevronRight, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-32 bg-zinc-950 relative overflow-hidden">
+    <section id="experience" className="py-8 md:py-12 bg-zinc-950 relative overflow-hidden">
       {/* Subtle Background Glow */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-24">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-5xl font-black text-white mb-6 tracking-tighter uppercase"
-          >
-            Professional <span className="text-blue-500">Journey</span>
-          </motion.h2>
-          <motion.div 
-            initial={{ width: 0 }}
-            whileInView={{ width: "80px" }}
-            viewport={{ once: true }}
-            className="h-1 bg-blue-600 mx-auto rounded-full" 
-          />
-        </div>
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                  <div className="max-w-xl">
+                    <motion.h2 
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      className="text-4xl sm:ml-3 md:ml-0  md:text-5xl font-black text-white mb-4 md:mb-6 uppercase leading-none"
+                    >
+                      Professional <span className="text-blue-500">Journey</span>
+                    </motion.h2>
+                  
+                  </div>
+                </div>
+
+        
         
         <div className="max-w-4xl mx-auto">
           <motion.div 

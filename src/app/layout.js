@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sarthak | Web Developer Portfolio",
+  title: "Sarthak | FullStack Developer Portfolio",
   description:
-    "Sarthak’s web developer portfolio featuring projects, skills, experience, and high-performance frontend applications built with React and Next.js.",
+    "Sarthak’s fullstack developer portfolio featuring projects, skills, experience, and high-performance frontend applications built with React and Next.js.",
   icons: {
     icon: "/favicon.ico",
   },

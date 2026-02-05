@@ -5,15 +5,15 @@ import { GraduationCap, ChevronRight, Calendar, MapPin, Award } from 'lucide-rea
 
 const Education = () => {
   return (
-    <section id="education" className="py-24 bg-black relative">
+    <section id="education" className="py-6 md:py-12 bg-black relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div className="max-w-xl">
             <motion.h2 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-5xl font-black text-white mb-6 uppercase tracking-tighter"
+              className="text-4xl md:text-5xl font-black text-white mb-4 md:mb-6 uppercase leading-none"
             >
               Academic <span className="text-blue-500">Foundation</span>
             </motion.h2>
@@ -41,7 +41,7 @@ const Education = () => {
             </div>
             
             {/* Content Card */}
-            <div className="md:w-2/3 bg-zinc-900/50 border border-white/5 rounded-3xl p-8 md:p-12 hover:border-blue-500/30 transition-all duration-500 backdrop-blur-sm">
+            <div className="md:w-2/3 bg-zinc-900/60 border border-white/15 rounded-3xl p-8 md:p-12 hover:border-blue-500/40 transition-all duration-300 backdrop-blur-sm">
               <div className="flex items-center gap-4 mb-8">
                 <div className="p-3 bg-zinc-800 rounded-2xl text-blue-500">
                   <GraduationCap className="w-6 h-6" />
