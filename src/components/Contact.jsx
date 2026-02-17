@@ -53,9 +53,9 @@ const Contact = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-12 py-6 bg-zinc-900 border border-white/10 text-white font-black uppercase text-xs tracking-[0.2em] rounded-2xl hover:bg-zinc-800 transition-all"
+              className="px-12 py-6 bg-zinc-900 border border-white/10 text-white font-black uppercase text-sm tracking-[0.2em] rounded-2xl hover:bg-zinc-800 transition-all"
             >
-              Download CV
+              Download Resume
             </motion.a>
           </div>
 

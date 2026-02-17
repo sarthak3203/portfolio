@@ -44,25 +44,25 @@ const Skills = () => {
     {
       title: "Frontend",
       icon: Globe,
-      skills: ["ReactJS (v19)", "Next.js", "Tailwind CSS (v4)", "GSAP (v3)", "Framer Motion", "HTML5/CSS3"],
+      skills: ["ReactJS (v19)", "Next.js", "Tailwind CSS (v4)", "GSAP (v3)",],
       delay: 0.1
     },
     {
       title: "Backend",
       icon: Terminal,
-      skills: ["Node.js (v22)", "Express.js (v5)", "RESTful APIs", "JWT", "BullMQ", "Rate Limiting"],
+      skills: ["Node.js (v22)", "Express.js (v5)", "RESTful APIs", "JWT", "BullMQ", "Rate Limiting", "Authentication/Authorization"],
       delay: 0.2
     },
     {
       title: "Databases",
       icon: Database,
-      skills: ["PostgreSQL", "MongoDB", "Redis", "Neon DB", "Prisma ORM"],
+      skills: ["PostgreSQL", "MongoDB", "Redis",],
       delay: 0.3
     },
     {
       title: "Core CS",
       icon: Cpu,
-      skills: ["DSA", "System Design", "Operating Systems", "Networking", "OOP", "C++ (v23)"],
+      skills: ["OOP", "DBMS", "Operating Systems", "Computer Networks", "Data Strctures & Algorithms", "System Design"],
       delay: 0.4
     }
   ];

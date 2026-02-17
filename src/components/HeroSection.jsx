@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center pt-8 bg-black overflow-hidden"
+      className="relative min-h-screen flex items-center pt-2 md:pt-8 bg-black overflow-hidden"
     >
       {/* Background blobs */}
       <div className="absolute top-1/4 -left-32 w-[520px] h-[520px] bg-blue-600/15 rounded-full blur-[140px]" />
@@ -41,7 +41,7 @@ const HeroSection = () => {
             className="flex items-center gap-4 text-blue-500 font-mono mb-10"
           >
             <div className="h-px w-12 bg-blue-500" />
-            <span className="text-xs font-bold tracking-[0.35em] uppercase">
+            <span className="text-sm md:text-lg font-bold tracking-[0.2em] uppercase">
               Fullstack Software Developer
             </span>
           </motion.div>
@@ -65,42 +65,27 @@ const HeroSection = () => {
             className="flex flex-wrap items-center gap-8"
           >
             {/* CTA */}
-            <a href="#contact" className="relative z-20 md:px-5 md:py-3 py-2 px-3 bg-linear-to-r from-blue-400 to-blue-800 text-white text-[16px] md:text-[20px] rounded-xl font-bold flex items-center gap-3 hover:bg-blue-700 hover:scale-108 transition-all">
+            <a href="#contact" className="relative z-20 md:px-5 md:py-3.5 py-2 px-4 bg-linear-to-r from-blue-400 to-blue-800 text-white text-[15px] md:text-[17px] rounded-xl tracking-widest font-bold flex items-center gap-3 hover:bg-blue-700 hover:scale-108 transition-all">
               HIRE ME
               <ArrowRight className="w-5 h-5" />
             </a>
 
-            {/* Socials */}
-            <div className="flex items-center gap-6">
-              <a
-                href="https://github.com/sarthak3203"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/80 hover:text-blue-500 transition-colors"
-              >
-                <Github className="w-8 h-8" />
-              </a>
-              <a
-                href="https://linkedin.com/in/sarthak3203/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/80 hover:text-blue-500 transition-colors"
-              >
-                <Linkedin className="w-8 h-8" />
-              </a>
-            </div>
+            {/* Download Resume */}
+            <motion.a
+                          href="/Sarthak_Resume.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="md:px-8 md:py-5 px-6 py-4 bg-zinc-900 border border-white/10 text-white font-black uppercase text-xs tracking-[0.2em] rounded-2xl hover:bg-zinc-800 transition-all"
+                        >
+                          Download Resume
+                        </motion.a>
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        animate={{ y: [0, 12, 0] }}
-        transition={{ repeat: Infinity, duration: 1 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
-      >
-        <div className="w-px h-20 bg-gradient-to-b from-blue-500 to-transparent" />
-      </motion.div>
+      
     </section>
   );
 };

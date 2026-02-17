@@ -28,9 +28,9 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-bold tracking-wide text-white"
+          className="sm:text-[22px] md:text-3xl font-semibold tracking-wide text-white"
         >
-          SARTHAK<span className="text-blue-500"> </span>
+          Hi, I'm Sarthak<span className="text-blue-500"> </span>
         </motion.div>
 
         {/* Desktop Links (Hidden on small screens) */}
@@ -39,13 +39,13 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-sm font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors"
+              className="text-sm font-bold uppercase tracking-widest text-white/77 hover:text-white transition-colors"
             >
               {link.name}
             </a>
           ))}
           <a 
-            href="#contact" 
+            href="mailto:sarthak3203@gmail.com" 
             className="text-xs font-bold uppercase tracking-widest px-6 py-3 bg-white text-black rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105"
           >
             Connect
@@ -58,7 +58,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="text-white focus:outline-none"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
