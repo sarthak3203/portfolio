@@ -113,7 +113,7 @@ const PersonalProjects = () => {
               </div>
 
               {/* Project Header Row */}
-              <div className="flex flex-col md:flex-col md:items-start justify-between gap-6 mb-6">
+              <div className="flex flex-col md:flex-col md:items-start justify-between gap-6 mb-6 -ml-2 md:ml-0">
                 <div className="flex gap-4 items-start">
                   <div className="p-3 bg-zinc-900 border border-white/10 rounded-xl text-blue-500 shrink-0">
                     {project.icon}
@@ -163,7 +163,7 @@ const PersonalProjects = () => {
               </div>
 
               {/* Description & Tags */}
-              <div className="max-w-4xl mt-6">
+              <div className="max-w-4xl mt-6 -ml-3 md:ml-0">
                 <div className="flex flex-col gap-4 text-zinc-400 mb-8 leading-relaxed">
                   {project.description.map((item, i) => (
                     <div key={i} className="flex gap-4 items-start">

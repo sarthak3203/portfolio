@@ -33,7 +33,7 @@ const Education = () => {
               <div className="w-px h-full bg-zinc-800" />
             </div>
 
-            <div className="flex-1 pb-12">
+            <div className="flex-1 pb-12 -ml-4 md:ml-0">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-4">
                 <div>
                   {/* Updated Header Information */}

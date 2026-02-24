@@ -66,7 +66,7 @@ const HeroSection = () => {
           >
             {/* CTA */}
             <a href="#contact" className="relative z-20 md:px-5 md:py-3.5 py-2 px-4 bg-linear-to-r from-blue-400 to-blue-800 text-white text-[15px] md:text-[17px] rounded-xl tracking-widest font-bold flex items-center gap-3 hover:bg-blue-700 hover:scale-108 transition-all">
-              HIRE ME
+              CONTACT ME
               <ArrowRight className="w-5 h-5" />
             </a>
 

@@ -19,8 +19,8 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-6 md:py-12 bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="experience" className="py-5 md:py-12 bg-zinc-950">
+      <div className="max-w-7xl mx-auto md:px-6 px-6">
         {/* Stacked Heading - Left Aligned */}
         <div className="mb-10">
           <motion.h2
@@ -53,7 +53,7 @@ const Experience = () => {
               </div>
 
               {/* Role & Date Row */}
-              <div className="flex flex-col md:flex-col md:items-start justify-between gap-4 mb-6">
+              <div className="flex flex-col md:flex-col md:items-start justify-between gap-4 -ml-2 md:ml-0 mb-6">
                 <div>
                   <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tighter">
                     {exp.role}
@@ -76,7 +76,7 @@ const Experience = () => {
               </div>
 
               {/* Content Area */}
-              <div className="max-w-4xl">
+              <div className="max-w-4xl -ml-3">
                 <ul className="space-y-5">
                   {exp.description.map((item, i) => (
                     <li

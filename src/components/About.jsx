@@ -14,7 +14,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-[83%] mx-auto"
+          className="md:w-[83%] w-[97%] mx-auto"
         >
           {/* Section Heading matching the style of other components */}
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 md:mb-10 uppercase leading-none">
