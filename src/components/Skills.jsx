@@ -18,7 +18,8 @@ const SkillCategory = ({ title, skills, icon: Icon, delay }) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay }}
-    className="bg-zinc-900/65 border border-white/10 p-8 rounded-3xl hover:border-blue-500/30 transition-all group"
+    // h-full ensures the box fills the grid cell height
+    className="bg-zinc-900/65 border border-white/10 p-8 rounded-3xl hover:border-blue-500/30 transition-all group h-full flex flex-col"
   >
     <div className="flex items-center gap-4 mb-6">
       <div className="p-3 bg-blue-600/10 rounded-2xl text-blue-500 group-hover:scale-110 transition-transform">
@@ -26,7 +27,8 @@ const SkillCategory = ({ title, skills, icon: Icon, delay }) => (
       </div>
       <h3 className="text-xl font-bold text-white uppercase tracking-tight">{title}</h3>
     </div>
-    <div className="flex flex-wrap gap-2">
+    
+    <div className="flex flex-wrap gap-2 mt-2">
       {skills.map((skill, index) => (
         <span 
           key={index}
@@ -44,7 +46,7 @@ const Skills = () => {
     {
       title: "Frontend",
       icon: Globe,
-      skills: ["ReactJS (v19)", "Next.js", "Tailwind CSS (v4)", "GSAP (v3)",],
+      skills: ["ReactJS (v19)", "Next.js", "Tailwind CSS (v4)", "GSAP (v3)"],
       delay: 0.1
     },
     {
@@ -56,20 +58,19 @@ const Skills = () => {
     {
       title: "Databases",
       icon: Database,
-      skills: ["PostgreSQL", "MongoDB", "Redis",],
+      skills: ["PostgreSQL", "MongoDB", "Redis"],
       delay: 0.3
     },
     {
       title: "Core CS",
       icon: Cpu,
-      skills: ["OOP", "DBMS", "Operating Systems", "Computer Networks", "Data Strctures & Algorithms", "System Design"],
+      skills: ["OOP", "DBMS", "Operating Systems", "Computer Networks", "Data Structures & Algorithms", "System Design"],
       delay: 0.4
     }
   ];
 
   return (
-    <section id="skills" className="py-10 md:18 bg-black relative overflow-hidden">
-      {/* Background Decor */}
+    <section id="skills" className="py-10 md:py-18 bg-black relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.05)_0%,transparent_70%)] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -106,9 +107,12 @@ const Skills = () => {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Updated grid: Strictly 2 columns for tablet and desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           {skillData.map((category, index) => (
-            <SkillCategory key={index} {...category} />
+            <div key={index}>
+              <SkillCategory {...category} />
+            </div>
           ))}
         </div>
 
@@ -117,7 +121,7 @@ const Skills = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-6 md:mt-10 pt-10 border-t border-white/10 flex flex-wrap justify-center items-center gap-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+          className="mt-10 pt-10 border-t border-white/10 flex flex-wrap justify-center items-center gap-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
         >
           <span className="text-blue-500 font-bold uppercase tracking-normal text-xl"> Tools:</span>
           <div className="flex items-center gap-2 text-white font-mono text-lg"><Layers size={18} /> VS Code</div>

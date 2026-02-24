@@ -21,8 +21,8 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center pt-2 md:pt-8 bg-black overflow-hidden"
     >
       {/* Background blobs */}
-      <div className="absolute top-1/4 -left-32 w-[520px] h-[520px] bg-blue-600/15 rounded-full blur-[140px]" />
-      <div className="absolute bottom-1/4 -right-32 w-[520px] h-[520px] bg-purple-600/15 rounded-full blur-[140px]" />
+      <div className="absolute top-1/4 -left-32 w-130 h-130 bg-blue-600/15 rounded-full blur-[140px]" />
+      <div className="absolute bottom-1/4 -right-32 w-130 h-130 bg-purple-600/15 rounded-full blur-[140px]" />
 
       {/* Noise overlay */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none" />
@@ -51,12 +51,12 @@ const HeroSection = () => {
             variants={fadeInUp}
             className="text-5xl md:text-[110px] font-black text-white md:leading-none leading-16 tracking-normal mb-12"
           >
-            Crafting <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-300 to-zinc-600">
-              Production
+            Building <br />
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-zinc-300 to-zinc-600">
+              Reliable
             </span>{" "}
             <br />
-            Reliability.
+            Systems.
           </motion.h1>
 
           {/* Actions */}
